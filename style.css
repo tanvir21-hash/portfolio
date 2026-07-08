@@ -1,6 +1,211 @@
+/* Reset style */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
 nav{
-    background-color: aliceblue;
+    
     display: flex;
     justify-content: space-between;
+    padding: 8px 0;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+}
+ul li a{
+    text-decoration: none;
+}
+.logo{
+    font-weight: bold;
+    font-size: 32px;
+}
+.logo-r{
+    color: #fd6e0a;
+}
+/* common style */
+.common-btn{
+    background-color: #fd6e0a;
+    padding: 6px 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.outline-btn{
+    background-color: white;
+    padding: 6px 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fd6e0a;
+    border: 1px solid #fd6e0a;
+    cursor: pointer;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* hero section */
+.hero-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-left h2{
+    font-weight: bold;
+    font-size: 50px;
+}
+.hero-left-p-1{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.hero-left-btn-parent{
+    margin-top: 8px;
+}
+.hero-parent-root{
+    background-color: #fff8f3;
+}
+
+/* About Me css */
+.about-parent{
+    background-color: #fff8f3;
+    text-align: center;
+    margin: 70px auto;
+    border-radius: 10px;
+    padding: 8px;
+}
+.about-parent p{
+    margin: 10px 0;
+}
+.about-box-parent{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* what i do section */
+.what-i-do-card-container{
+    margin: 60px auto;
+    text-align: center;
+}
+.what-i-do-card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 8px;
+    text-align: left;
+}
+.what-i-do-card-container .what-i-do-card{
+    border: 2px solid orange;
+    padding: 8px;
+    border-radius: 10px;
+}
+.what-i-do-card-container .what-i-do-card p{
+    color: #757575;
+    font-size: 15px;
+}
+.what-i-do-card-container .what-i-do-card h2{
+    margin: 10px 0;
+}
+/* Summary part */
+.summary-resume-parent h1{
+    text-align: center;
+    margin: 10px 20px 30px;
+}
+.resume-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.common-education-box{
+    margin: 10px auto;
+    border-bottom: 2px solid gray;
+    padding: 20px;
+}
+.last-education{
+    margin: 10px auto;
+    padding: 20px;
+}
+.common-experience{
+    margin: 10px auto;
+    border-bottom: 2px solid gray;
+    padding: 20px;
+}
+.first-exp{
+    margin: 10px auto;
+    padding: 20px;
+}
+/* amazing gallery section */
+.my-amazing-parent{
+    text-align: center;
+}
+.gallery{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    grid-auto-rows: 250px;
+     grid-template-areas: 
+        "one two three"
+        "four two six"
+        "four five six";
+}
+.gallery img{
+    height: 100%;
+    width:  100%;
+    object-fit: cover;
+}
+.box-1 {
+    grid-area: one;
+}
+.box-2 {
+    grid-area: two;
+}
+.box-3 {
+    grid-area: three;
+}
+.box-4 {
+    grid-area: four;
+}
+.box-5 {
+    grid-area: five;
+}
+.box-6 {
+    grid-area: six;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    margin-top: 70px !important;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #fff8f3;
+    padding: 20px;
+    border-radius: 12px;
+}
+footer form input, footer form textarea {
+    border: none;
     
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: white;
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
 }
